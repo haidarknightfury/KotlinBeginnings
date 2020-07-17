@@ -7,4 +7,8 @@ fun main(args: Array<String>) {
     val oldest = persons.maxBy { it.age ?:0}
     println("oldest person is $oldest")
 
+    // destructuring objects
+    val (name,age) = oldest!!;
+    println("name and age of oldest person is $name $age")
+
 }
